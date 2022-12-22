@@ -1,0 +1,272 @@
+/* Cabeçalho */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fafbfd;
+    border-bottom: 1px solid #ccc;
+  }
+
+i{
+    font-size: 30px;
+}
+  
+  .nav-toggler,
+  .nav-toggler-label {
+    display: none;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+  }
+  
+  nav {
+    position: relative;
+    line-height: 60px;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar .nav-item {
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .nav-link {
+    padding: 0.5rem 0.25rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #0a0a0a;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    #underline {
+      display: none;
+    }
+    header {
+      position: relative;
+    }
+    .nav-toggler-label {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  
+    nav {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      background-color: #fafbfd;
+      line-height: 40px;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: 0.3s;
+    }
+  
+    .nav-toggler:checked ~ nav {
+      transform: scale(1, 1);
+    }
+  
+    .navbar {
+      display: block;
+      width: 100%;
+    }
+  
+    .navbar .nav-item a{
+      margin: 0;
+      color: #000000;
+    }
+  
+    .navbar .nav-link {
+      display: block;
+      padding-left: 1rem;
+      width: 100%;
+    }
+  
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      background-color: #f3f3f3;
+    }
+  }
+
+  /* Fim Cabeçalho */
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+  }
+  /* fim scrollbar */
+
+  /* Inicio footer */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: white;
+    background-color: black;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+/* Final footer */
+  
+/* HTML */
+
+.texto-1 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
