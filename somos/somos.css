@@ -1,4 +1,4 @@
-/* Cabeçalho */
+/* Header */
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   
   a {
@@ -122,9 +122,11 @@ i{
     }
   }
 
-  /* Fim Cabeçalho */
+  /* final header */
 
-*{
+  /* footer */
+
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -237,9 +239,27 @@ footer{
     }
 }
 
-/* Final footer */
+/* Final Footer */
 
-.horario {
-  margin: 15px 0px 15px 15px;
-  
+/* Conteudo */
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
+
+.conteudo-1 {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid black;
+  border-top: 5px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  width: 50%;
+  height: 100px;
+  margin-left: 350px;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+/* Final conteudo */

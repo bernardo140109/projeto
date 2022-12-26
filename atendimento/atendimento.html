@@ -4,50 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="horario.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="atendimento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Horario de Atendimento</title>
 </head>
 <body>
         <!-- cabeçalho -->
         <header>
-            <a href="#" class="logo">Moda Jeans</a>
-            <input type="checkbox" id="nav-toggler" class="nav-toggler" />
-            <label for="nav-toggler" class="nav-toggler-label">
-              <i class="bx bx-menu"></i>
-            </label>
-            <nav>
-              <div id="underline"></div>
-      
-              <ul class="navbar">
-                <li class="nav-item">
-                  <a href="#" onClick="window.location.reload();">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="https://www.instagram.com/moda_jeans_parobe/"
-                    target="_blank"
-                    rel="external"
-                    class="nav-link"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="nav-item"></li>
-                <li class="nav-item"><a href="https://wa.me/5551997408254" target="_blank"
-                  rel="external" class="nav-link">Contato</a></li>
-      
-                  <li class="nav-item"></li>
-                  <li class="nav-item"><a href="https://www.google.com.br/maps/@-29.6312393,-50.8352078,3a,75y,151.14h,93.53t/data=!3m6!1e1!3m4!1s8Rc9WHFb0-zH95dwc6YXSw!2e0!7i13312!8i6656?hl=pt-BR" target="_blank"
-                    rel="external" class="nav-link">Endereço</a></li>
-              </ul>
-            </nav>
+            <header>
+                <a href="#" class="logo">Moda Jeans</a>
+                <input type="checkbox" id="nav-toggler" class="nav-toggler" />
+                <label for="nav-toggler" class="nav-toggler-label">
+                  <i class="bx bx-menu"></i>
+                </label>
+                <nav>
+                  <div id="underline"></div>
+            
+                  <ul class="navbar">
+                    <li class="nav-item">
+                      <a href="/index.html" onClick="window.location.reload();">Página inicial</a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
         </header>
                 <!-- final Cabeçalho -->
 
-    <section>
-        <div class="horario">
-            <h3>Horarios de Atendimento</h3>
-        </div>
-    </section>
+        <nav class="horario">
+            <h3 class="texto-hora">Horarios de Atendimento</h3>
+            <li class="horario__item"><h4 class="hora">Domingo</h4> <h4>Fechado</h4></li>
+            <li class="horario__item"><h4 class="hora">Segunda-Feira</h4> <h4>09:00–18:30</h4></li>
+            <li class="horario__item"><h4 class="hora">terça-Feira</h4> <h4>08:30–18:30</h4></li>
+            <li class="horario__item"><h4 class="hora">Quarta-Feira</h4> <h4>08:30–18:30</h4></li>
+            <li class="horario__item"><h4 class="hora">Quinta-Feira</h4> <h4>08:30–18:30</h4></li>
+            <li class="horario__item"><h4 class="hora">Sexta-Feira</h4> <h4>08:30–18:30</h4></li>
+            <li class="horario__item"><h4 class="hora">Sábado</h4> <h4>08:30–17:30</h4></li>
+        </nav>
 
     <footer>
         <div class="container-footer">
@@ -56,8 +51,7 @@
                 <div class="footer-col">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="/quemsms/somos.html"> Quem somos </a></li>
-                        <li><a href="./Atendimento/atendimento.html"> horarios de atendimento </a></li>
+                        <li><a href="/somos/somos.html"> Quem somos </a></li>
                         <li><a href=""> política de privacidade </a></li>
                         <li><a href=""> programa de afiliados</a></li>
                     </ul>

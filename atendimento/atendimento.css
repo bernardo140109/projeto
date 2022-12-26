@@ -1,132 +1,132 @@
-/* Header */
+/* Cabeçalho */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #fafbfd;
-    border-bottom: 1px solid #ccc;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fafbfd;
+  border-bottom: 1px solid #ccc;
+}
 
 i{
-    font-size: 30px;
+  font-size: 30px;
 }
-  
-  .nav-toggler,
-  .nav-toggler-label {
+
+.nav-toggler,
+.nav-toggler-label {
+  display: none;
+}
+
+.logo {
+  margin-right: 15vh;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+nav {
+  position: relative;
+  line-height: 60px;
+}
+
+.navbar {
+  margin-left: 50vh;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar .nav-item {
+  margin: 0 0.5rem;
+}
+
+.navbar .nav-link {
+  padding: 0.5rem 0.25rem;
+  color: rgb(0, 0, 0);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0a0a0a;
+}
+
+
+@media screen and (max-width: 768px) {
+  #underline {
     display: none;
   }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: black;
-  }
-  
-  nav {
+  header {
     position: relative;
-    line-height: 60px;
   }
-  
-  .navbar {
+  .nav-toggler-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
     display: flex;
-    list-style-type: none;
+    align-items: center;
+    height: 100%;
   }
-  
-  .navbar .nav-item {
-    margin: 0 0.5rem;
+
+  nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #fafbfd;
+    line-height: 40px;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: 0.3s;
   }
-  
+
+  .nav-toggler:checked ~ nav {
+    transform: scale(1, 1);
+  }
+
+  .navbar {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar .nav-item a{
+    margin: 0;
+    color: #000000;
+  }
+
   .navbar .nav-link {
-    padding: 0.5rem 0.25rem;
-    color: rgb(0, 0, 0);
+    display: block;
+    padding-left: 1rem;
+    width: 100%;
   }
-  
+
   .navbar .nav-link:hover,
   .navbar .nav-link.active {
-    color: #0a0a0a;
+    background-color: #f3f3f3;
   }
+}
 
-  
-  @media screen and (max-width: 768px) {
-    #underline {
-      display: none;
-    }
-    header {
-      position: relative;
-    }
-    .nav-toggler-label {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 1rem;
-      display: flex;
-      align-items: center;
-      height: 100%;
-    }
-  
-    nav {
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      background-color: #fafbfd;
-      line-height: 40px;
-      transform: scale(1, 0);
-      transform-origin: top;
-      transition: 0.3s;
-    }
-  
-    .nav-toggler:checked ~ nav {
-      transform: scale(1, 1);
-    }
-  
-    .navbar {
-      display: block;
-      width: 100%;
-    }
-  
-    .navbar .nav-item a{
-      margin: 0;
-      color: #000000;
-    }
-  
-    .navbar .nav-link {
-      display: block;
-      padding-left: 1rem;
-      width: 100%;
-    }
-  
-    .navbar .nav-link:hover,
-    .navbar .nav-link.active {
-      background-color: #f3f3f3;
-    }
-  }
+  /* Fim Cabeçalho */
 
-  /* final header */
-
-  /* footer */
-
-  *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -234,32 +234,34 @@ footer{
     }
 }
 @media (max-width:600px) {
-    .footer-col{
+    .footer-col{  
         width: 100%;
     }
 }
+/* Final footer */
 
-/* Final Footer */
 
-/* Conteudo */
 
-* {
-  font-family: 'Poppins', sans-serif;
+/* conteudo */
+
+/* Conteudo-horario */
+
+.horario {
+  margin-left: 25vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.conteudo-1 {
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid black;
-  border-top: 5px solid black;
-  border-radius: 10px;
-  padding: 50px;
-  width: 50%;
-  height: 100px;
-  margin-left: 350px;
-  align-items: center;
-  font-size: 15px;
-  margin-bottom: 20px;
-  margin-top: 15px;
+.hora {
+  font-weight: 800;
+  font-size: 0.875rem;
+  margin-right: 15px;
 }
 
-/* Final conteudo */
+.texto-hora {
+  font-size: 0.938rem;
+}
+
+.horario__item {
+  display: flex;
+}
