@@ -40,7 +40,7 @@ i{
   .logo {
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
+    color: #000000;
   }
   
   nav {
@@ -126,7 +126,8 @@ i{
 
   /* footer */
 
-  *{
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -198,8 +199,8 @@ footer{
 }
 
 .footer-col .medias-socias a:hover{
-    color: white;
-    background-color: black;
+    color: #415aca;
+    background-color: white;
 }
 .footer-col .form-sub input{
     width: 100%;
@@ -208,7 +209,7 @@ footer{
     outline: none;
     border: 1px solid white;
     color: white;
-    background-color: #415aca;
+    background-color: #007add;
 }
 .footer-col .form-sub input::placeholder{
     color: white;
@@ -239,6 +240,17 @@ footer{
     }
 }
 
+.footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.criador {
+  color: #f3f3f3;
+  margin-left: 60vh;
+}
+
 /* Final Footer */
 
 /* Conteudo */
@@ -251,7 +263,7 @@ footer{
   font-family: 'Poppins', sans-serif;
   border: 1px solid black;
   border-top: 5px solid black;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   padding: 50px;
   width: 50%;
   height: 100px;
@@ -260,6 +272,7 @@ footer{
   font-size: 15px;
   margin-bottom: 20px;
   margin-top: 15px;
+  font-weight: 600    ;
 }
 
 /* Final conteudo */

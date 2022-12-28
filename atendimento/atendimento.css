@@ -238,6 +238,17 @@ footer{
         width: 100%;
     }
 }
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.criador {
+  color: #f3f3f3;
+  margin-left: 60vh;
+}
 /* Final footer */
 
 
@@ -247,7 +258,6 @@ footer{
 /* Conteudo-horario */
 
 .horario {
-  margin-left: 25vh;
   display: flex;
   flex-direction: column;
 }
@@ -256,12 +266,27 @@ footer{
   font-weight: 800;
   font-size: 0.875rem;
   margin-right: 15px;
+  margin-bottom: 20px;
 }
 
 .texto-hora {
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 0.938rem;
 }
 
 .horario__item {
   display: flex;
+}
+
+.agendas {
+  margin: 0 25vh;
+  justify-content: space-between;
+  display: flex;
+}
+
+.agenda-p {
+  font-weight: 700;
+  margin-top: 15.5px;
+  margin-right: 10vh;
 }
